@@ -1,17 +1,4 @@
-const SellerFooter = ()=>{
-
-
-    return (
-
-        <div>
-
-          FOOTER  
-        </div>
-    );
-
-}
+const SellerFooter = () => {
+  return <div>FOOTER</div>;
+};
 export default SellerFooter;
-
-
-
-

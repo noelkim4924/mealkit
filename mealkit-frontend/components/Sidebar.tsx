@@ -1,10 +1,10 @@
-'use client'
-import React from 'react';
-import Dashboard from './sellerWeb/DashBoard'; 
-import Menu from './sellerWeb/Menue';
-import Order from './sellerWeb/Order';
-import Review from './sellerWeb/Review';
-import Add from './sellerWeb/Add';
+"use client";
+import React from "react";
+import Dashboard from "./SellerWeb/DashBoard";
+import Menu from "./SellerWeb/Menu";
+import Order from "./SellerWeb/Order";
+import Review from "./SellerWeb/Review";
+import Add from "./SellerWeb/Add";
 interface SidebarProps {
   onSectionSelect: (section: string) => void;
 }
@@ -15,18 +15,18 @@ const Sidebar: React.FC<SidebarProps> = ({ onSectionSelect }) => {
   };
 
   const handleMenuClick = () => {
-    onSectionSelect('menu');
+    onSectionSelect("menu");
   };
   const handleOrderClick = () => {
-    onSectionSelect('order');
+    onSectionSelect("order");
   };
 
   const handleReviewClick = () => {
-    onSectionSelect('review');
+    onSectionSelect("review");
   };
 
   const handleAddClick = () => {
-    onSectionSelect('add');
+    onSectionSelect("add");
   };
 
   return (
@@ -38,16 +38,16 @@ const Sidebar: React.FC<SidebarProps> = ({ onSectionSelect }) => {
         <Menu onMenuClick={handleMenuClick} />
       </div>
       <div>
-      <Order onOrderClick={handleOrderClick} />
+        <Order onOrderClick={handleOrderClick} />
       </div>
       <div>
-      <Review onReviewClick={handleReviewClick} />
+        <Review onReviewClick={handleReviewClick} />
       </div>
       <div>
-      <Add onAddClick={handleAddClick} />
+        <Add onAddClick={handleAddClick} />
       </div>
     </aside>
   );
-}
+};
 
 export default Sidebar;

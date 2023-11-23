@@ -1,10 +1,5 @@
-const layout = ()=>{
+const layout = () => {
+  return null;
+};
 
-
-    return null
-
-        
-    
-}
-
-export default layout
+export default layout;

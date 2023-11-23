@@ -1,14 +1,13 @@
-'use client'
+"use client";
 
-import React from 'react';
-import SearchBar from './sellerWeb/SearchBar'; 
-import StoreIcon from './sellerWeb/StoreIcon'; 
+import React from "react";
+import SearchBar from "./SellerWeb/SearchBar";
+import StoreIcon from "./SellerWeb/StoreIcon";
 
 const SellerHeader: React.FC = () => {
   const handleSearch = (query: string) => {
-    console.log('Searching for:', query);
+    console.log("Searching for:", query);
   };
-
 
   return (
     <div className="header">
@@ -21,6 +20,6 @@ const SellerHeader: React.FC = () => {
       </div>
     </div>
   );
-}
+};
 
 export default SellerHeader;

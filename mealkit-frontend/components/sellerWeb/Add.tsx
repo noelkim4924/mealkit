@@ -6,6 +6,7 @@ interface AddProps {
 
 const Add: React.FC<AddProps> = ({ onAddClick }) => {
   return (
+    // routing to the add page
     <button className="common-button" onClick={onAddClick}>
       Add
     </button>
